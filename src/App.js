@@ -30,8 +30,8 @@ function App() {
     
     <div className='status'><h1>Status</h1>
     <div className='backGroud'>
-    <h2>Rio de Janeiro - Brasil</h2>
-    <h3>Diego mendes da silva</h3>
+    <h2>Diego mendes da silva</h2>
+    <h3>Rio de Janeiro - Brasil</h3>
     <ul>
       <li>desenvolvedor web</li>
       <li>front-end</li>
