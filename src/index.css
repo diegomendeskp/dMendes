@@ -13,9 +13,7 @@ code {
     monospace;
 }
 html{
-    background-color: #B24545;
     background-image: url('/src/polygon.svg') ;
-    background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;

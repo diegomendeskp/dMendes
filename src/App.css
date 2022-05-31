@@ -113,6 +113,8 @@
     border: 3px solid #55000079;
     width: 46%;
     height: 30%;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
 }
 
 @media only screen and (max-width: 500px){
