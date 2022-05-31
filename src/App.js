@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BsLinkedin, BsFacebook, BsGithub,BsInstagram } from "react-icons/bs";
+import { BsLinkedin, BsWhatsapp, BsGithub,BsInstagram } from "react-icons/bs";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
 
      <div className='privateData'>
       <a href='https://www.linkedin.com/in/diego-mendes-da-silva-7a80a6229/'> <BsLinkedin className='icon' /></a>
-      <a href='https://www.facebook.com/punk.dark777/'> <BsFacebook className='icon'/> </a>
+      <a href='https://contate.me/Diego.m'> <BsWhatsapp className='icon'/> </a>
       <a href='https://github.com/diegomendeskp'> <BsGithub className='icon'/> </a>
       <a href='https://www.instagram.com/hunterp7/'> <BsInstagram className='icon'/></a>
      </div>
@@ -50,7 +50,17 @@ function App() {
     </div>
 
     <div className='projects'>
-    <div className='cardProjects'></div>
+    <div className='cardProjects'>
+      <div className='cardIndividual'>
+       <a href='https://dices-omega.vercel.app/'>
+        <img className='imageCard' src={require('./arauto.png')}/>
+        <div className='middle'>
+        <div class="text">Projeto de registro de usuarios e site de boardGame</div>
+        </div>
+        </a>
+      </div>
+      
+    </div>
 
     </div>
     </main>
