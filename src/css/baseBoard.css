@@ -1,0 +1,9 @@
+.baseBoard{
+    display: flex;
+    background-color: #aa620479;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+    backdrop-filter: blur( 5px );
+}
