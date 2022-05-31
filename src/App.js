@@ -60,9 +60,20 @@ function App() {
         </a>
       </div>
       
+      <div className='cardIndividual'>
+       <a href='https://shopgames.vercel.app/'>
+        <img className='imageCard' src={require('./shopGame.png')}/>
+        <div className='middle'>
+        <div class="text">Projeto de loja de jogos</div>
+        </div>
+        </a>
+      </div>
+
     </div>
 
     </div>
+
+    <div className='baseBoard'><h3>Obrigado por chegar ate aqui.</h3></div>
     </main>
     
   );

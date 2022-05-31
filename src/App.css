@@ -26,6 +26,8 @@
   }
 
 .title{
+    position: fixed;
+    float: left;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -45,6 +47,7 @@
       width: 100%;
       height: 200%;
       flex-wrap: wrap;
+      position: relative;
     }
   }
   @media only screen and (max-width: 500px){
@@ -52,6 +55,8 @@
         width: 100%;
         height: 200%;
         flex-wrap: wrap;
+        position: relative;
+
     }
   }
 .menuBar a{
@@ -100,6 +105,7 @@
 
 }
 .status{
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -108,10 +114,22 @@
     width: 46%;
     height: 30%;
 }
+
+@media only screen and (max-width: 500px){
+    .status {
+      width: 100%;
+      height: 200%;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+
+    }
+  }
+
 .cardProjects{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -120,18 +138,17 @@
    
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.555);
-    padding: 5px;
+    padding: 10px;
     margin: 20px;
     width: 400px;
     transition: all 0.3s ease-out;
     position: relative;
-  width: 50%;
     
 }
 .imageCard{
     transition: .5s ease;
     backface-visibility: hidden;
-    display: block;
+    display: flex;
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
@@ -139,27 +156,44 @@
 
 
 .middle {
-    transition: .5s ease;
-    opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ba6900b9;
+  border-radius: 10px;
   }
   
-  .cardIndividual:hover .imageCard {
-    opacity: 0.3;
-  }
-  
+ 
   .cardIndividual:hover .middle {
     opacity: 1;
 
   }
   .text {
-    background-color: #aa6204;
     color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+
+  .baseBoard{
+      display: flex;
+      background-color: #aa620479;
+      align-items: flex-end;
+      flex-direction: row;
+      justify-content: center;
+      color: aliceblue;
+      backdrop-filter: blur( 5px );
+
+
   }
